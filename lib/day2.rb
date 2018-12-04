@@ -37,6 +37,6 @@ module Day2
   end
 
   def self.load
-    IO.read('lib/day2.txt').split
+    IO.readlines('lib/day2.txt').map(&:strip)
   end
 end

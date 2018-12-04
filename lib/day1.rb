@@ -21,8 +21,8 @@ module Day1
   end
 
   def self.load
-    IO.read('lib/day1.txt')
-      .split
+    IO.readlines('lib/day1.txt')
+      .map(&:strip)
       .map(&:to_i)
   end
 end
